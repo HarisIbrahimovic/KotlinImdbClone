@@ -30,7 +30,6 @@ constructor(
     override suspend fun loginUser(email: String, password: String) {
         firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener {task->
             if(task.isSuccessful){
-                addUser(email, password)
                 fUser.value=firebaseAuth.currentUser
             }else
                 toastMessage.value="Login failed."
