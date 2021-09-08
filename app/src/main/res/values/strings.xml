@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">KotlinImdbClone</string>
+    <string name="continue_as_guest">Continue as guest?</string>
+    <string name="login">login</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email address</string>
+    <string name="double_tap_login_to_signup">Double tap Login to SignUp.</string>
+    <string name="double_tap_signup_to_login">Double tap SignUp to Login.</string>
+    <string name="loginU">Login</string>
+    <string name="signUpU">Sign Up</string>
+    <string name="you">You</string>
+    <string name="settings">Settings</string>
+    <string name="discover">Discover</string>
+    <string name="movies">Movies</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="popular">Popular</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="search">Search</string>
+    <string name="recent_comments">Recent comments</string>
+    <string name="favorites">Favorites</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="recommended">Recommended</string>
+    <string name="upload_picture">Upload Picture</string>
+    <string name="sign_out">Sign out</string>
+    <string name="username">UserName</string>
+    <string name="configure_account">Configure account.</string>
+    <string name="star">⋆</string>
+    <string name="cast_and_crew">Cast and crew</string>
+    <string name="description">Description</string>
+    <string name="ratings">Ratings</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="biograpgy">Biograpgy</string>
+    <string name="movie_roles">Movie Roles</string>
+    <string name="comment">Comment</string>
+    <string name="NR">NR</string>
+</resources>

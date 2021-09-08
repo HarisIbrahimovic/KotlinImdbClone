@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "140392649621",
+    "firebase_url": "https://kotlinimdbclone-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "kotlinimdbclone",
+    "storage_bucket": "kotlinimdbclone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140392649621:android:88a4bcae8bd8758baadc9c",
+        "android_client_info": {
+          "package_name": "com.example.kotlinimdbclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140392649621-9mvsitauvk8da0mni9ikb65i8blkpdia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmjK4DQDIKrr3oD9mQ0LyxA3TBew-MhEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140392649621-9mvsitauvk8da0mni9ikb65i8blkpdia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

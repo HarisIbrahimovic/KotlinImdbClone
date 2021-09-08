@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moviedetails.DetailsActivity">
+
+    <ProgressBar
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/detailedMovieImage"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:contentDescription="@string/todo" />
+
+
+            <TextView
+                android:gravity="center"
+                android:elevation="1dp"
+                android:layout_marginTop="-30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/didact_gothic"
+                android:background="@drawable/namedesign"
+                android:textColor="#BD6868"
+                android:id="@+id/detailedMovieName"
+                android:textSize="35sp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/detailedReleaseDate"
+                />
+
+            <RatingBar
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/detailedRatingBar"
+                android:numStars="5"
+                android:clickable="false"
+                android:isIndicator="true"
+                android:secondaryProgressTint="#454545"
+                android:progressTint="#454545"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="230dp"
+                android:elevation="5dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/detailedGenres"
+                android:background="@drawable/buttondesing"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#BD6868"
+                android:fontFamily="@font/didact_gothic"
+                android:text="@string/cast_and_crew"
+                android:textSize="22sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/actorRecView"
+                android:layout_marginStart="-3dp"
+                android:layout_height="245dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginStart="15dp"
+                android:textColor="#BD6868"
+                android:text="@string/description"
+                android:fontFamily="@font/didact_gothic"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/DetailsMovieDescription"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/didact_gothic"
+                android:layout_marginTop="5dp"
+                android:justificationMode="inter_word"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="70dp"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ratedesign"
+        android:gravity="center"
+        android:id="@+id/ratings"
+        android:orientation="horizontal"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ratings"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/didact_gothic"
+            android:id="@+id/DetailsAddRatingText"
+            />
+        <ImageButton
+            android:layout_marginTop="3dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/heart"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:background="#00000000"
+            android:contentDescription="@string/todo" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
