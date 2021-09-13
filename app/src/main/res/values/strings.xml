@@ -34,4 +34,5 @@
     <string name="movie_roles">Movie Roles</string>
     <string name="comment">Comment</string>
     <string name="NR">NR</string>
+    <string name="Unknown">Unknown</string>
 </resources>
