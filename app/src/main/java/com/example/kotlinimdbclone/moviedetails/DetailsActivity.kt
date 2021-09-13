@@ -39,15 +39,11 @@ class DetailsActivity : AppCompatActivity() ,ActorAdapter.OnClickActorAdapter{
         observe()
 
         binding.ratings.setOnClickListener{
-            try {
                 val intent = Intent(applicationContext,RatingActivity::class.java)
                 intent.putExtra("id",id)
                 intent.putExtra("moviePicPath",moviePicPath)
                 intent.putExtra("movieName",movieName)
                 startActivity(intent)
-            }catch (e:Exception){
-                Toast.makeText(applicationContext,e.toString(),Toast.LENGTH_SHORT).show()
-            }
         }
 
     }
